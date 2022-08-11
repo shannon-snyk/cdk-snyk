@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: install aws-cdk cli, install dependencies and finally cdk synth
         run: |
-          npm install --global aws-cdk
+          npm install --location=global aws-cdk
           npm install
           cdk synth
       - name: Run IaC test for issues
